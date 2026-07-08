@@ -1,6 +1,6 @@
 # Optional Render deployment path if the native Node build has trouble installing Playwright browsers.
 # Use this only if you switch the Render service runtime to Docker.
-FROM mcr.microsoft.com/playwright:v1.61.1-noble
+FROM mcr.microsoft.com/playwright:v1.61.0-noble
 
 WORKDIR /app
 COPY package*.json ./
