@@ -11,7 +11,7 @@
     "postinstall:browsers": "npx playwright install chromium"
   },
   "dependencies": {
-    "@playwright/test": "^1.54.2",
+    "@playwright/test": "^1.61.0",
     "dotenv": "^16.4.7",
     "express": "^4.19.2",
     "helmet": "^7.1.0",
