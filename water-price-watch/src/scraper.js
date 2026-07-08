@@ -289,7 +289,7 @@ export async function scrapeSellOrders() {
       }
     });
 
-    await page.goto(config.ruralco.url, { waitUntil: 'networkidle', timeout: config.ruralco.timeoutMs });
+    await page.goto(config.ruralco.url, { waitUntil: 'domcontentloaded', timeout: config.ruralco.timeoutMs });
 
     await chooseLabel(page, config.ruralco.marketLabel, warnings);
     await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => null);
